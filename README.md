@@ -21,10 +21,15 @@ Hazırlık Metodolojisi: Veri seti, yerel data/ klasörüne yüklenmiş ve LangC
 ⚙️ Çözüm Mimarisi ve Kullanılan Yöntemler
 
 Proje, güncel GenAI teknolojilerini bir araya getiren modern bir RAG (Retrieval Augmented Generation) mimarisi üzerine kurulmuştur.
+
 LLM (Generation Model): Google Gemini API (gemini-2.5-flash) -Kullanıcı sorusuna bağlama dayalı nihai cevabı üretmek-
+
 Embedding Model: Google GenerativeAI Embeddings (embedding-001) -Metin parçalarını vektörlere dönüştürmek-
+
 Vektör Veritabanı: ChromaDB -Vektörleri depolamak ve hızlı, anlamsal arama yapmak-
+
 RAG Çatısı: LangChain (LCEL) -Tüm RAG adımlarını (yükleme, bölme, arama, prompt'lama) zincirlemek-
+
 Web Arayüzü: Streamlit -Kullanıcı dostu ve hızlı bir arayüz sunmak-
 
 Özel Vurgu: Esnek Prompt Mühendisliği: Cevap alamama riskini ortadan kaldırmak için, LLM'e "Bağlamda net bir cevap yoksa, kendi genel mühendislik bilgini kullan" talimatı verilmiştir. Bu, RAG'ın doğruluğunu korurken, chatbot'un pratik kullanılabilirliğini artırmıştır.
@@ -32,6 +37,7 @@ Web Arayüzü: Streamlit -Kullanıcı dostu ve hızlı bir arayüz sunmak-
 📈 Elde Edilen Sonuçlar
 
 Proje, yalnızca temel bilgileri değil, aynı zamanda mühendislik eğitimine özgü karmaşık konuları da başarıyla yanıtlayabildiğini kanıtlamıştır:
+
 Derin Cevaplar: MOSFET, BJT modelleri, Kontrol Sistemleri Bode diyagramları ve Makine Öğrenmesi (L1/L2) gibi yüksek seviye teknik sorulara, kaynaklara dayalı, yapılandırılmış ve detaylı Türkçe cevaplar üretilmiştir.
 Ölçeklenebilirlik: 381 adet dosyanın 18 dakikada başarılı bir şekilde işlenmesi, kodun endüstriyel ölçekte veri yönetimine uygun olduğunu göstermiştir.
 Profesyonel Sunum: Çözüm, enerji dolu, profesyonel (Z kuşağına uygun) bir tonda cevaplar üretmektedir.
