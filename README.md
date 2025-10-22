@@ -7,15 +7,19 @@ Geliştirici: Ufuk Baran Karadağ (Hacettepe Üniversitesi, EEM 4. Sınıf)
 Bu proje, Akbank GenAI Bootcamp kapsamında, Retrieval Augmented Generation (RAG) mimarisini kullanarak, mühendislik öğrencilerine özel bir bilgi asistanı geliştirmek amacıyla oluşturulmuştur.
 
 🎯 Projenin Amacı
+
 Projenin temel amacı, Hacettepe Üniversitesi Elektrik-Elektronik Mühendisliği ders müfredatını oluşturan İngilizce teknik kaynakları (ders kitapları, notlar vb.), yapay zeka aracılığıyla işleyerek, kullanıcının sorduğu spesifik teknik sorulara doğrulanmış ve detaylı Türkçe cevaplar üreten bir web tabanlı sohbet robotu geliştirmektir. Bu sayede, öğrenciler İngilizce kaynaklardaki bilgilere hızlı ve pratik bir şekilde ulaşabilir.
 
 📚 Veri Seti Hakkında Bilgi
+
 Projenin gücünü oluşturan veri tabanı, hazır veri setlerinden değil, direkt olarak mühendislik eğitimine özgü kaynaklardan oluşturulmuştur:
+
 Veri Tipi ve Kapsam: EE Mühendisliği müfredatındaki ana dersleri (Analog Elektronik, Sayısal Tasarım, Kontrol Sistemleri, Makine Öğrenmesi, Sinyal ve Sistemler vb.) kapsayan 381 adet ders kitabı ve notu (PDF) kullanılmıştır.
 Hacim: Toplamda 16.000'den fazla sayfa işlenmiş ve 38.000'den fazla bilgi parçasına ayrılmıştır.
 Hazırlık Metodolojisi: Veri seti, yerel data/ klasörüne yüklenmiş ve LangChain'in DirectoryLoader özelliği ile toplu olarak okunmuş, işlenmiştir. Bu metodoloji, büyük ölçekli ve çeşitli dosya formatlarından veri alımını başarıyla yönetmiştir.
 
 ⚙️ Çözüm Mimarisi ve Kullanılan Yöntemler
+
 Proje, güncel GenAI teknolojilerini bir araya getiren modern bir RAG (Retrieval Augmented Generation) mimarisi üzerine kurulmuştur.
 LLM (Generation Model): Google Gemini API (gemini-2.5-flash) -Kullanıcı sorusuna bağlama dayalı nihai cevabı üretmek-
 Embedding Model: Google GenerativeAI Embeddings (embedding-001) -Metin parçalarını vektörlere dönüştürmek-
@@ -26,12 +30,14 @@ Web Arayüzü: Streamlit -Kullanıcı dostu ve hızlı bir arayüz sunmak-
 Özel Vurgu: Esnek Prompt Mühendisliği: Cevap alamama riskini ortadan kaldırmak için, LLM'e "Bağlamda net bir cevap yoksa, kendi genel mühendislik bilgini kullan" talimatı verilmiştir. Bu, RAG'ın doğruluğunu korurken, chatbot'un pratik kullanılabilirliğini artırmıştır.
 
 📈 Elde Edilen Sonuçlar
+
 Proje, yalnızca temel bilgileri değil, aynı zamanda mühendislik eğitimine özgü karmaşık konuları da başarıyla yanıtlayabildiğini kanıtlamıştır:
 Derin Cevaplar: MOSFET, BJT modelleri, Kontrol Sistemleri Bode diyagramları ve Makine Öğrenmesi (L1/L2) gibi yüksek seviye teknik sorulara, kaynaklara dayalı, yapılandırılmış ve detaylı Türkçe cevaplar üretilmiştir.
 Ölçeklenebilirlik: 381 adet dosyanın 18 dakikada başarılı bir şekilde işlenmesi, kodun endüstriyel ölçekte veri yönetimine uygun olduğunu göstermiştir.
 Profesyonel Sunum: Çözüm, enerji dolu, profesyonel (Z kuşağına uygun) bir tonda cevaplar üretmektedir.
 
 ⚙️ Kodunuzun Çalışma Kılavuzu (Local Ortam)
+
 Projeyi yerel olarak çalıştırmak için aşağıdaki adımları sırasıyla uygulayınız.
 
 1.Repo Klonlama: Repoyu yerel bilgisayarınıza indirin.
@@ -61,6 +67,7 @@ python ingest.py
 streamlit run app.py
 
 🌐 Web Arayüzü & Product Kılavuzu
+
 Bu bölüm, uygulamanın çalıştırılması, kabiliyetleri ve erişim detaylarını açıklamaktadır.
 Erişim Bilgileri (Local URL)
 Uygulama, yerel ortamınızda başarıyla başlatılmıştır. Erişim için aşağıdaki URL'leri kullanabilirsiniz:
