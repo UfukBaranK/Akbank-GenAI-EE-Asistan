@@ -68,3 +68,4 @@ Yerel URL (Kendi Bilgisayarınızdan Erişim): http://localhost:8501
 Ağ URL'si (Aynı Yerel Ağdaki Cihazlardan Erişim): http://192.168.1.6:8501
 (Not: Global erişim için mutlaka Streamlit Community Cloud gibi bir platforma dağıtılmalıdır.)
 
+https://akbank-genai-ee-asistan-gtkdpyindmkcup2rcaxxzy.streamlit.app/
