@@ -84,3 +84,5 @@ Ağ URL'si (Aynı Yerel Ağdaki Cihazlardan Erişim): http://192.168.1.6:8501
 https://akbank-genai-ee-asistan-gtkdpyindmkcup2rcaxxzy.streamlit.app/
 
 ⚠️ NOT: Bu link, bulut ortamında 381 Kaynaklık RAG Kabiliyetini sergileyemez. Projenin tam kapasite çalıştığını test etmek için, lütfen README.md'deki Çalışma Kılavuzunu takip ederek projeyi yerel bilgisayarınızda (Network URL: http://192.168.1.6:8501) test ediniz.
+
+LinkedIn: https://www.linkedin.com/in/ufuk-baran-karada%C4%9F-17ank19122002/
