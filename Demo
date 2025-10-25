@@ -1,0 +1,7 @@
+Canlı Demo Linki ve Test Uyarısı
+
+Uygulamanın çalışır halini görmek ve minimal RAG kabiliyetlerini test etmek için aşağıdaki canlı demo linkini kullanabilirsiniz:
+
+Canlı Demo Linki: https://akbank-genai-ee-demo-site-drgcuosxhghdkqeaqf3lhb.streamlit.app/
+
+Önemli Not: Bu demo linki, bulut ortamının kısıtlamaları nedeniyle yalnızca 5 adet minimal PDF (demo veri seti) ile çalıştırılmaktadır. Projenin 381 kaynaklık ASIL KAPASİTESİNİ görmek ve test etmek için lütfen yukarıdaki Çalışma Kılavuzu'na uyarak projeyi yerel ortamınızda başlatınız.
